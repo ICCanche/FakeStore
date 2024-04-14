@@ -1,7 +1,7 @@
 import 'dart:convert';
 
+import 'package:fake_store/common/error/api_exception.dart';
 import 'package:fake_store/common/http/constants.dart';
-import 'package:fake_store/common/http/error/api_exception.dart';
 import 'package:fake_store/src/modules/products/data/datasource/remote/remote_data_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
