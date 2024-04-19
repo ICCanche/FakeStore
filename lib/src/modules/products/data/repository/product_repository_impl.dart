@@ -17,10 +17,8 @@ class ProductRepositoryImpl implements ProductRepository {
     try {
       final productsModel = await _remoteDataSource.getProducts();
       return Right(mapProductModelsToEntityList(productsModel));
-    } on ApiException catch(e) {
+    } on ApiException catch (e) {
       return Left(ApiFailure.fromException(e));
     }
   }
-
-
 }
